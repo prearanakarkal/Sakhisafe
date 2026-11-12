@@ -1,0 +1,47 @@
+{
+  "users": {
+    "u_demo1": {
+      "name": "Demo User A",
+      "trusted_contacts": ["Contact 1 (Mom)", "Contact 2 (Friend)", "Contact 3 (Warden)"],
+      "trip": {"route": "College -> Hostel via highway road", "expected_arrival": "21:30",
+               "last_checkin": "20:55", "missed_checkins": 2, "unexpected_stop_minutes": 14},
+      "history": {"accidental_triggers_last_30d": 0, "total_sos_last_30d": 0}
+    },
+    "u_demo2": {
+      "name": "Demo User B",
+      "trusted_contacts": ["Contact 1", "Contact 2", "Contact 3"],
+      "trip": {"route": "Hostel -> Campus gate", "expected_arrival": "14:10",
+               "last_checkin": "14:05", "missed_checkins": 0, "unexpected_stop_minutes": 0},
+      "history": {"accidental_triggers_last_30d": 4, "total_sos_last_30d": 4}
+    },
+    "u_demo3": {
+      "name": "Demo User C",
+      "trusted_contacts": ["Contact 1", "Contact 2", "Contact 3"],
+      "trip": {"route": "Market -> Hostel", "expected_arrival": "18:45",
+               "last_checkin": "18:20", "missed_checkins": 1, "unexpected_stop_minutes": 0},
+      "history": {"accidental_triggers_last_30d": 0, "total_sos_last_30d": 1}
+    }
+  },
+  "zones": {
+    "isolated_highway": {"risk_score": 0.85, "lit": false, "crowd": "none",
+      "nearby_places": [
+        {"type": "24x7 petrol pump", "distance_m": 350},
+        {"type": "police outpost", "distance_m": 600},
+        {"type": "hospital", "distance_m": 2100}]},
+    "campus_gate": {"risk_score": 0.15, "lit": true, "crowd": "high",
+      "nearby_places": [
+        {"type": "campus security desk", "distance_m": 40},
+        {"type": "pharmacy", "distance_m": 200}]},
+    "market_street": {"risk_score": 0.45, "lit": true, "crowd": "medium",
+      "nearby_places": [
+        {"type": "police booth", "distance_m": 250},
+        {"type": "24x7 medical store", "distance_m": 300}]}
+  },
+  "responders": {
+    "police": {"name": "Police", "number": "112"},
+    "women_helpline": {"name": "Women Helpline", "number": "181"},
+    "women_in_distress": {"name": "Women in Distress", "number": "1091"},
+    "ambulance": {"name": "Ambulance", "number": "108"},
+    "campus_security": {"name": "Campus Security (mock)", "number": "000-CAMPUS"}
+  }
+}

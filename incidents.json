@@ -1,0 +1,11 @@
+[
+  {"id": "inc1", "user_id": "u_demo1", "trigger_type": "voice", "voice_confidence": 0.93,
+   "timestamp": "22:40", "area": "isolated_highway",
+   "message": "Hello Sakhi - help", "cancelled_by_user": false},
+  {"id": "inc2", "user_id": "u_demo2", "trigger_type": "button", "voice_confidence": null,
+   "timestamp": "14:12", "area": "campus_gate",
+   "message": "", "cancelled_by_user": false},
+  {"id": "inc3", "user_id": "u_demo3", "trigger_type": "missed_checkin", "voice_confidence": null,
+   "timestamp": "18:50", "area": "market_street",
+   "message": "Check-in missed, no response to prompt", "cancelled_by_user": false}
+]
